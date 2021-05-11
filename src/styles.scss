@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapperApp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 3em;
+
+  .form-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .title_form {
+      font-size: 2em;
+      margin-bottom: .5em;
+    }
+
+    .input_image {
+      font-size: 1em;
+      margin-bottom: 0.8em;
+    }
+
+    .input_decode {
+      background: rgb(255, 222, 36);
+      border: none;
+      padding: 1em;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:active {
+        transition: all 0.5s;
+      }
+      &:hover {
+        background-color: rgba(214, 152, 70, 0.877);
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .wrapperResults {
+    width: 100%;
+    display: flex;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+    .image-preview {
+      width: 50%;
+      height: 100%;
+      padding: 3em;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .result-text {
+      width: 50%;
+      padding: 3em;
+      font-size: 1em;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
